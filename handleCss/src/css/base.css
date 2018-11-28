@@ -1,0 +1,22 @@
+
+html {
+	background: red;
+}
+
+.box {
+	/* composes from 的文件打包之后会放在当前文件的前面 */
+	composes: big-box from './common.css';
+	width: 200px;
+	height: 200px;
+	background: #333;
+	border-radius: 4px;
+	transition: all 1s;
+	display:flex;
+}
+
+:root {
+	--mainColor: red;
+}
+a {
+	color: var(--mainColor)
+}
