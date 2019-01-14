@@ -72,38 +72,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_base_css__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_base_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_base_css__);
 
-// ? 正常使用
-// import './css/base.css'
-// import './css/common.css'
-
-// ? style-loader  useable属性
-// import base from './css/base.css'
-// import common from './css/common.css'
-
-// var flag = false
-
-// setInterval(() => {
-// 	if (flag) {
-// 		base.unuse()
-// 	} else {
-// 		base.use()
-// 	}
-// 	flag = !flag
-// }, 1000);
-
-// ? 使用css-modules
-
-// import common from './css/common.css'
-
-var app = document.getElementById('app')
-app.innerHTML = '<div class="' + __WEBPACK_IMPORTED_MODULE_0__css_base_css___default.a.box + '"></div>'
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"box":"src-css-base_box_2SaOU src-css-common_big-box_35HtH"};
 
 /***/ })
 /******/ ]);

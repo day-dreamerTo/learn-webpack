@@ -1,0 +1,1 @@
+html{background:red}.box{width:200px;height:200px;border-radius:4px}.box1{background-position:0 0}.box1,.box2{background-image:url(./images/sprite.min.png);background-size:2250px 1334px}.box2{background-position:-750px 0}.box3{background-image:url(./images/sprite.min.png);background-position:-1500px 0;background-size:2250px 1334px}
