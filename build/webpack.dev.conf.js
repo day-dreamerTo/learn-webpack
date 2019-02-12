@@ -3,6 +3,7 @@ const proxy = require('./proxy')
 const historyFallback = require('./historyfallback')
 
 module.exports = {
+	mode: 'development',
 	devtool: 'cheap-module-source-map',
 	devServer: {
 		port: 8081,
@@ -15,7 +16,7 @@ module.exports = {
 		overlay: true
 	},
 	plugins: [
-		new Webpack.HotModuleReplacementPlugin(),
-		new Webpack.NamedModulesPlugin()
+		new Webpack.HotModuleReplacementPlugin()
+		// new Webpack.NamedModulesPlugin()
 	]
 }

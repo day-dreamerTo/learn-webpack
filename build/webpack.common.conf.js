@@ -91,7 +91,7 @@ const generateConfig = env => {
 				{
 					test: /\.js$/,
 					include: [path.resolve(__dirname, '../src')],
-					exclude: [path.resolve(__dirname, '../src/libs')],
+					exclude: [path.resolve(__dirname, '../src/libs'), path.resolve(__dirname, '../dist')],
 					use: scriptLoader
 				},
 				{

@@ -1,6 +1,8 @@
 import './css/base.less'
 import './css/a.less'
 
+import './js/b'
+
 import {
     componentA
 } from './js/a'
@@ -40,3 +42,6 @@ if (module.hot) {
 		list = newList
 	})
 }
+
+let c = 0
+console.log(c)

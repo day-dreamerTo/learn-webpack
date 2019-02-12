@@ -1,3 +1,5 @@
+// import * as _ from 'lodash'
+// import React from 'react'
 
 export function componentA () {
 	let aDiv = document.createElement('div')

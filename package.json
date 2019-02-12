@@ -34,7 +34,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "express": "^4.16.4",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "glob-all": "^3.1.0",
     "gulp": "^3.9.1",
@@ -61,21 +61,22 @@
     "ts-loader": "^3.5.0",
     "typescript": "^3.1.6",
     "url-loader": "^1.1.2",
+    "webpack": "^4.28.4",
     "webpack-bundle-analyzer": "^3.0.3",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.2.1",
     "webpack-dev-middleware": "^1.12.2",
-    "webpack-dev-server": "^2.11.1",
+    "webpack-dev-server": "^3.1.14",
     "webpack-hot-middleware": "^2.24.3",
-    "webpack-merge": "^4.1.5"
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@babel/runtime": "^7.1.5",
+    "axios": "^0.18.0",
     "imports-loader": "^0.8.0",
     "lodash": "^4.17.11",
     "react": "^16.7.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^3.10.0"
+    "style-loader": "^0.23.1"
   },
   "browserslist": [
     ">= 1%",
