@@ -12,11 +12,12 @@ module.exports = {
 		historyApiFallback: historyFallback,
 		proxy: proxy,
 		hot: true,
-		hotOnly: true,
-		overlay: true
+		hotOnly: false,
+		overlay: true,
+		host: '0.0.0.0'
 	},
 	plugins: [
-		new Webpack.HotModuleReplacementPlugin()
-		// new Webpack.NamedModulesPlugin()
+		new Webpack.HotModuleReplacementPlugin(),
+		new Webpack.NamedModulesPlugin()
 	]
 }

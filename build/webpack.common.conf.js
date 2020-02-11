@@ -7,7 +7,7 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const merge = require('webpack-merge')
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const generateConfig = env => {
 	const extractLess = new ExtractTextWebpackPlugin({
@@ -89,6 +89,12 @@ const generateConfig = env => {
 		module: {
 			rules: [
 				{
+					test: /\.html$/,
+					use: [
+						'raw-loader'
+					]
+				},
+				{
 					test: /\.js$/,
 					include: [path.resolve(__dirname, '../src')],
 					exclude: [path.resolve(__dirname, '../src/libs'), path.resolve(__dirname, '../dist')],
@@ -123,11 +129,14 @@ const generateConfig = env => {
 		},
 		plugins: [
 			extractLess,
-			new HtmlWebpackPlugin(),
+			new HtmlWebpackPlugin({
+				filename: 'index.html',
+				template: path.join(__dirname, '../src/index.html')
+			}),
 			new Webpack.ProvidePlugin({
 				$: 'jquery'
-			}),
-			new BundleAnalyzerPlugin()
+			})
+			// new BundleAnalyzerPlugin()
 		]
 	}
 }

@@ -13,6 +13,9 @@ module.exports = {
 	rules: {
 		// indent: ['error', 4],
 		'indent': 0,
-		'no-tabs': 0
+		'no-tabs': 0,
+		'no-unused-vars': 0,
+		'no-trailing-spaces': 0,
+		'space-before-function-paren': 0
 	}
 }
